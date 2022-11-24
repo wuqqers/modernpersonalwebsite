@@ -17,5 +17,5 @@ idk, I remember centering it but it doesn't look like it.
 
 version 0.2
 
---------------------------------------------------------------------------------Changelog------------------------------
+------------------------------------------------------Changelog--------------------------------------------------------
 Hamburger menu added and mobile compatibility stabilized
