@@ -14,6 +14,8 @@ idk, I remember centering it but it doesn't look like it.
 2. I want the setting box that appears on the computer to swing like a swing when the mouse is hovered over it. just like he has a physique
 3.Hamburger menu for mobile
 
+
 version 0.2
------------------------Changelog-------------------
+
+--------------------------------------------------------------------------------Changelog--------------------------------------------------------------------------------
 Hamburger menu added and mobile compatibility stabilized
