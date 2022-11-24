@@ -1,4 +1,4 @@
-# modern portfolio website
+# modern personal website
 Modern Website
 The site made for practice in a short time...
 version 0.1
