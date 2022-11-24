@@ -1,7 +1,6 @@
 # Security Policy
 Those who want to improve the site can develop it
 Those who want to use it actively can use it with the Ömer Kaya Ekici tag or with the wuqqers tag.
-It is shameful and forbidden to present the project as if it is one's own project after taking it and developing it.
 All rights reserved by Ömer Kaya Ekici
 
 ## Supported Versions
