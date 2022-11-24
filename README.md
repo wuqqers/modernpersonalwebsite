@@ -3,7 +3,7 @@ Modern Website
 The site made for practice in a short time...
 version 0.1
 
------------------------BUGS-----------------------
+--------------------------------------------------------------------BUGS---------------------------------------------------------------------------------
 Have a bugs?
 Yes has one or two bugs from navigation slider when you scroll new section and another bugs in the Education and Career section this i guess text are not centered
 idk, I remember centering it but it doesn't look like it.
