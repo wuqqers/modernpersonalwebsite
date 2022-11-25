@@ -15,8 +15,25 @@
     <div class='ropecontainer'>
         <div class='rope'></div>
     </div>
-    <div class="holdbox"><i class="fa-solid fa-gear"></i></div>
-
+    <div class="holdbox" onclick="openSettings()"><a><i class="fa-solid fa-gear"></i></a></div>
+    <div id="mySettings" class="settings-overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSettings()">&times;</a>
+        <div class="settings-overlay-content">
+            <h2 style="color: #000;">Choose Your Color</h2>
+            <ul>
+                <li><span class="roundcolor" onclick="changecolor()">.</span></li>
+            </ul>
+        </div>
+    </div>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a class="et-hero-tab" href="#tab-es6">Timeline</a>
+            <a class="et-hero-tab" href="#tab-flexbox">About Me</a>
+            <a class="et-hero-tab" href="#tab-react">Education & Career</a>
+            <a class="et-hero-tab" href="#tab-angular">Contact Us</a>
+        </div>
+    </div>
 </div>
 
 
@@ -52,15 +69,7 @@
             </div> -->
         </div>
     </section>
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-            <a class="et-hero-tab" href="#tab-es6">Timeline</a>
-            <a class="et-hero-tab" href="#tab-flexbox">About Me</a>
-            <a class="et-hero-tab" href="#tab-react">Education & Career</a>
-            <a class="et-hero-tab" href="#tab-angular">Contact Us</a>
-        </div>
-    </div>
+
 
     <div class="et-hero-tabs-container">
         <a class="hamburger-tabs" onclick="openNav()"><i class="fa-solid fa-bars"></i></a>
@@ -285,12 +294,35 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
     <script src="./assets/js/script.js"></script>
     <script>
+        var r = document.querySelector(':root');
+
         function openNav() {
             document.getElementById("myNav").style.display = "block";
         }
 
         function closeNav() {
             document.getElementById("myNav").style.display = "none";
+        }
+
+        function openSettings() {
+            document.getElementById("mySettings").style.display = "block";
+        }
+
+        function closeSettings() {
+            document.getElementById("mySettings").style.display = "none";
+        }
+
+        /* */
+
+
+        function changecolor() {
+            r.style.setProperty('--bodybackground', 'var(--darkbluenight)');
+            r.style.setProperty('--primaryhcolor', 'var(--white)');
+            r.style.setProperty('--primaryicolor', 'var(--white)');
+            r.style.setProperty('--primarybuttoncolor', 'var(--white)');
+            r.style.setProperty('--primarybuttontextcolor', 'var(--dark)');
+            r.style.setProperty('--primaryshadow', 'var(--whiteshadow)');
+            r.style.setProperty('--primarybordercolor', 'var(--white)');
         }
     </script>
 
