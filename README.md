@@ -19,3 +19,4 @@ version 0.2
 
 ------------------------------------------------------Changelog--------------------------------------------------------
 Hamburger menu added and mobile compatibility stabilized
+Added settings menu website have dark mode right now :))
