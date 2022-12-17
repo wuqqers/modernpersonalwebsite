@@ -25,21 +25,21 @@
             </ul>
         </div>
     </div>
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-            <a class="et-hero-tab" href="#tab-es6">Timeline</a>
-            <a class="et-hero-tab" href="#tab-flexbox">About Me</a>
-            <a class="et-hero-tab" href="#tab-react">Education & Career</a>
-            <a class="et-hero-tab" href="#tab-angular">Contact Us</a>
-        </div>
-    </div>
+  
 </div>
 
 
 
 <body>
-
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#tab-es6" class="navbar-menu-link">Timeline</a>
+            <a href="#tab-flexbox" class="navbar-menu-link">About Me</a>
+            <a href="#tab-react" class="navbar-menu-link">Education & Career</a>
+            <a href="#tab-angular" class="navbar-menu-link">Contact Us</a>
+        </div>
+      </div>
     <!-- partial:index.partial.html -->
     <!-- Hero -->
     <section class="et-hero-tabs">
@@ -71,15 +71,29 @@
     </section>
 
 
-    <div class="et-hero-tabs-container">
-        <a class="hamburger-tabs" onclick="openNav()"><i class="fa-solid fa-bars"></i></a>
-        <a class="et-hero-tab" href="#tab-es6">Timeline</a>
-        <a class="et-hero-tab" href="#tab-flexbox">About Me</a>
-        <a class="et-hero-tab" href="#tab-react">Education & Career</a>
-        <a class="et-hero-tab" href="#tab-angular">Contact Us</a>
-        <!-- <a class="et-hero-tab" href="#tab-other">Other</a> -->
-        <span class="et-hero-tab-slider"></span>
-    </div>
+    <nav class="navbar">
+        <div class="navbar-container">
+          <!-- <a href="#" class="navbar-logo">Logo</a> -->
+          <div class="navbar-menu-icon">
+            <i onclick="openNav()" class="fas fa-bars"></i>
+          </div>
+          <ul class="navbar-menu">
+            <li class="navbar-menu-item">
+              <a href="#tab-es6" class="navbar-menu-link">Timeline</a>
+            </li>
+            <li class="navbar-menu-item">
+              <a href="#tab-flexbox" class="navbar-menu-link">About Me</a>
+            </li>
+            <li class="navbar-menu-item">
+              <a href="#tab-react" class="navbar-menu-link">Education & Career</a>
+            </li>
+            <li class="navbar-menu-item">
+              <a href="#tab-angular" class="navbar-menu-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
 
 
     <!-- Main -->
@@ -294,15 +308,19 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
     <script src="./assets/js/script.js"></script>
     <script>
+function openNav() {
+
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+    </script>
+    <script>
         var r = document.querySelector(':root');
 
-        function openNav() {
-            document.getElementById("myNav").style.display = "block";
-        }
-
-        function closeNav() {
-            document.getElementById("myNav").style.display = "none";
-        }
+    
 
         function openSettings() {
             document.getElementById("mySettings").style.display = "block";
