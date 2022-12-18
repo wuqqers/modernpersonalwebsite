@@ -209,12 +209,13 @@ h3 {
      color: #000;
     text-decoration: none;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 1850px) {
     .navbar-menu {
       display: none;
     }
     .navbar-menu-icon {
       display: block;
+      margin: 0 auto;
     }
   }
   
