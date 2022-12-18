@@ -16,6 +16,7 @@ body {
     --lightdark: rgba(51, 51, 51, 0.555);
     --white: #fff;
     --primaryhcolor: var(--dark);
+    --primarypcolor: var(--dark);
     --primaryicolor: var(--lightdark);
     --primarybuttoncolor: var(--dark);
     --primarybuttontextcolor: var(--white);
@@ -745,6 +746,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 .small-text {
     padding-bottom: 15px;
     visibility: visible;
+    color: var(--primarypcolor);
 }
 
 .small-text.is-hidden {
