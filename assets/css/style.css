@@ -20,6 +20,8 @@ body {
     --primaryicolor: var(--lightdark);
     --primarybuttoncolor: var(--dark);
     --primarybuttontextcolor: var(--white);
+    --primarynavhover: var(--white);
+    --primarynavtext: var(--dark);
 }
 
 html {
@@ -150,8 +152,8 @@ h3 {
     justify-content: space-between;
     height: 4rem;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    background: #fff;
-    color: #000;
+    background: var(--primarybuttoncolor);
+    color: var(--primarybuttontextcolor);
     font-size: 1.2rem;
     position: sticky;
   top: 0;
@@ -163,15 +165,15 @@ h3 {
     padding: 0 20px;
   }
   .navbar-menu-link {
-    color: #000;
+    color: var(--primarybuttontextcolor);
     text-decoration: none;
     transition: all 0.3s ease;
     padding: 20px 90px;
     flex: 1;
   }
   .navbar-menu-link:hover {
-    color: white;
-    background: #000;
+    color: var(--primarynavtext);
+    background: var(--primarynavhover);
     transition: all 0.5s ease;
   }
   
@@ -207,7 +209,7 @@ h3 {
   }
   .navbar-menu-link {
     display: block;
-     color: #000;
+     color: var(--primarybuttontextcolor);
     text-decoration: none;
   }
   @media (max-width: 1850px) {
