@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta name=keywords content="Ömer Kaya Ekici, Ömer Kaya Ekici Kimdir?, Ömer Kaya Ekici Hayatı, Ömer Ekici, Ömer Kaya" />
+<meta name=author content="Ömer Kaya Ekici" />
+<meta name=description content=" Ömer Kaya Ekici Resmi Sitesi" />
+<meta property=og:title content="Ömer Kaya Ekici Resmi Sitesi" />
+<meta property=og:description content="Ömer Kaya Ekici Resmi Sitesi" />
+<meta property=og:type content=website />
+<meta property=og:image content=./assets/img/post39.jpg />
+<link rel=stylesheet href=https://cdn.lineicons.com/3.0/lineicons.css>
+<script src="https://kit.fontawesome.com/703c50ed65.js" crossorigin="anonymous"></script>
+<link rel=stylesheet type=text/css href=./assets/css/style.css>
+<title> Ömer Kaya Ekici Resmi Sitesi</title>
+<link rel=icon type=image/x-icon href=./assets/img/favicon.ico>
+</head>
+<body>
+   <img id="logo" class="logo" src="./assets/img/logo.webp" alt="Logo">
+<div class="row" id="column">
+    <div  class="column col-sm-9" >
+        <div class="card" onclick="openabout()">
+            <div id="cardabout"  class="card-side front" style="background-image: url('./assets/img/gold/Hakkımda.webp');">
+              <div></div>
+            </div>
+            <div class="card-side back">
+              <div></div>
+              <img class="cardimg" src="./assets/img/kaya.webp" alt="Ömer Kaya Ekici">
+              <div class="about-me" style="overflow-y: hidden;">
+                <p lang="TR" id="littlep" style="padding:10px; color: #000; font-size:x-small; line-height: 150%;">9 Ocak 1999 Tarihinde Bursa’nın Osmangazi Ilçesinde Zübeyde Hanım Doğum Evinde Cerebral Palsy Tanısıyla Dünyaya Geldim... <br> Eğitim hayatım boyunca tedavilerim amacıyla Ankara Hacettepe Üniversitesinde birçok ameliyat geçirdim. İlkokul dönemi sadece yoğun ameliyatlarla değil aynı zamanda insanların tavırları yüzünden de oldukça zorlu geçen bir dönemdi. Öyle düşünüyorum ki insan doğası gereği, bilmediği ve anlayamadığı şeylerden çekinir ve garipserler. Bu durumun insan ilişkileri üzerindeki etkisi ise; toplumda ‘farklı olanı veya farklılıkları’ dışlamaya dönüyor kanımca. </p>
+              </div>
+         
+              <div class="magnifierdiv"><img class="magnifier"  src="./assets/img/magnifier.webp" alt="Read More"><span class="read">Read More</span></div>
+            </div>
+          </div>
+    </div>
+    <div class="column col-sm-7" >
+        <div class="card" onclick="openworks()">
+            <div id="cardworks" class="card-side front" style="background-image: url('./assets/img/gold/Projelerim.webp');">
+              <div></div>
+            </div>
+            <div class="card-side back">
+              <div></div>
+              <h2 id="proje" style="text-align: center; padding-top: 40px;">Projelerim</h2>
+              <div class="about-me" style="background-image: url('./assets/img/57297.webp'); background-repeat: no-repeat; background-size: cover;">
+                
+              </div>
+              <div class="magnifierdiv"><img class="magnifier"  src="./assets/img/magnifier.webp" alt="Read More"><span class="read">Read More</span></div>
+            </div>
+          </div>
+    </div>
+    <div class="column col-sm-5">
+        <div class="card " onclick="opencontact()">
+            <div class="card-side front" id="cardcontact" style="background-image: url('./assets/img/gold/İletisim.webp');">
+              <div></div>
+              
+            </div>
+            <div class="card-side back">
+              <div></div>
+              <h2 id="iletisim" style="text-align: center; color: #ffff; padding-top:40px;">İletişim</h2>
+              <form id="contact" action="" method="GET">
+                <fieldset>
+                  <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                  <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                </fieldset>
+                  <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                  <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                </fieldset>
+              </form>
+              <div class="magnifierdiv"><img class="magnifier"  src="./assets/img/magnifier.webp" alt="Read More"><span class="read">Read More</span></div>
+            </div>
+          </div>
+    </div>
+    <div class="column col-sm-3">
+        <div class="card">
+            <div id="settings" class="card-side front" style="background-image: url('./assets/img/gold/settings.webp');">
+              <div></div>
+            </div>
+            <div class="card-side back">
+              <div></div>
+              <!-- <h2 style="text-align: center; color: #ffff; padding-top:40px;">Ayarlar</h2> -->
+              <h3 id="dil" style="padding-top:20px; padding-bottom: 20px; text-align: center;">Dil</h3>
+               <div class="selectbox" style="display: flex; justify-content: center; ">
+              <!-- <a href="#" id="TR" onclick="langTR()" style="padding-right: 15px; color: #fff; text-decoration: none;">TR</a>
+              <a href="#" id="EN"  onclick="langEN()" style=" color: #fff; text-decoration: none;">EN</a> -->
+               <span id="TR" onclick="langTR()" style="padding-right: 15px; color: #fff; text-decoration: none;">TR</span>
+              <span id="EN" onclick="langEN()"  style=" color: #fff; text-decoration: none;">EN</span> 
+              <!-- <button id="EN" onclick="langEN()"  style="  text-decoration: none;">EN</button> -->
+              </div>
+              <h3 id="arkaplan" style="padding-top:20px; padding-bottom: 20px; text-align: center;">Arka Plan</h3>
+              <ul class="colorlist">
+                <li><span class="roundcolorblack" onclick="changecolorblack()">.</span></li>
+                <li><span class="roundcolordarkblue" onclick="changecolordarkblue()">.</span></li>
+                <li><span class="roundcolorlightblue" onclick="changecolorlightblue()">.</span></li>
+            </ul>
+            <h2 id="cardd" style="padding-top:20px; padding-bottom: 20px; text-align: center;">Kart Tasarımı</h2>
+            <ul class="colorlist">
+              <li><span class="roundpurple" onclick="givepurple()">.</span></li>
+              <li><span class="roundgold" onclick="givegold()">.</span></li>
+              <li><span class="roundgreen" onclick="givegreen()">.</span></li>
+              
+          </ul>
+          <h2 id="bg-card" style="padding-top:20px; padding-bottom: 20px; text-align: center;">Kart  Arka Planı</h2>
+          <ul class="colorlist">
+            <li><span class="roundbgpurple" onclick="givebgpurple()"></span></li>
+            <li><span class="roundbggold" onclick="givebggold()"></span></li>
+            <li><span class="roundbggreen" onclick="givebggreen()"></span></li>
+            
+            
+        </ul>    
+        </div>
+          </div>
+    </div>
+  </div>
+  <div id="about-content" class="about-content contentboxes">
+      <img onclick="closeabout()" class="close" src="./assets/img/close.webp" alt="closebutton">
+      <img class="cardimg-sec" src="./assets/img/kaya.webp" alt="Ömer Kaya Ekici">
+      <div class="about-content-sec" style="padding-top: 30px; padding-bottom: 30px; padding-left: 30px; padding-right: 30px;">
+        <p>
+          <h1 id="dogum">Doğum ve Doğumla Gelen Sürpriz </h1>
+          <p id="p1"> 9 Ocak 1999 tarihinde Bursa’nın Osmangazi ilçesinde Zübeyde Hanım Doğumevi’nde
+          Cerebral Palsy tanısıyla dünyaya geldim. Cerebral Palsy’nin birçok sonucundan
+          bendeki etkisi sağ tarafımı felçli bırakmasıydı. Bu yüzden küçük yaşta kaslarımı
+          gevşetme amacıyla, ilkokul dönemime kadar birçok botoks tedavisi geçirdim.
+          İlköğretimi Setbaşı İlköğretim Okulunda tamamladım. </p>
+          <h1 id="egitim">Eğitim Sürecim</h1>
+          <p id="p2">Bu süreçte tedavilerim amacıyla Ankara Hacettepe Üniversitesinde birçok ameliyat
+          geçirdim. İlkokul dönemi sadece yoğun ameliyatlarla değil aynı zamanda
+          insanların tavırları yüzünden de oldukça zorlu geçen bir dönemdi. Öyle
+          düşünüyorum ki insan doğası gereği, bilmediği ve anlayamadığı şeylerden çekinir
+          ve garipserler. Bu durumun insan ilişkileri üzerindeki etkisi ise; toplumda
+          ‘farklı olanı veya farklılıkları’ dışlamaya dönüyor kanımca. Bununla birlikte;
+          ilköğretim yıllarında insanların pek empati sahibi olmadığı ve kendi sınırları
+          içerisinde yaşadığı da göz önünde bulundurulunca, herhangi bir engelle sahip
+          insanlarla tanışmış olma olasılığı oldukça düşük oluyor. </p>
+          <h1 id="dışlanma">Dışlanma ve Toplumun Bir Parçası Olamama Duygusu</h1>
+          <p id="p3"> Bunların hepsinin toplamında ilköğretim dönemim, bolca dışlanma ve toplumun bir
+          parçası olarak hissedememiş olmamla beraber geçmişti. Kendimi, bütün engelleri
+          kaldırabildiğim sanal ortama vermeye başlamıştım. Okul dışı zamanımı, oyunlar
+          ile geçiriyordum. League of Legends ve Counter Strike Global Offensive gibi
+          online oyunlar oynamakla beraber Command & Conquer Genereals gibi strateji
+          oyunlarını da oynamayı özellikle seviyordum. Bu yüzden bu alanda kendimi
+          geliştirmek istedim. </p>
+          <h1 id="merak">Merak Dürtüsü</h1>
+          <p id="p4">Kendimi oyun sektöründe geliştirme kararı almanın yanı sıra, web tasarım ve
+          kodlama alanı da ilgimi çeken diğer bir alan olduğu için bu alan hakkında da
+          çalışmalara başlamıştım ve başlangıç olarak ise blog sitesi açmaya karar
+          vermiştim. Lise hayatım, Yıldırım Beyazıt Anadolu Lisesi’nde başlamıştı. Lise
+          yıllarında akıllı tahtamızın sadece usb bellek ile açılması dikkatimi çekmişti
+          ve bu sistemi daha yakından incelemek istedim. Benzer bir sistemi tasarlamak
+          adına, güvenlik sistemlerini araştırmaya başlamıştım. İlk adım olarak; Visual
+          Basic programı ve C# dilini öğrenmeye başladıktan sonra, ben de kendi
+          programlarımı yapmaya başlamıştım. Yabancı kaynaklardan yararlanarak, kendi
+          çalışmalarımda kullanıyordum. </p>
+          <h1 id="azim">Azim ve Tekrar Başarı </h1>
+          <p id="p5"> En sonunda benzer bir program yapmayı başarmıştım; lakin çok daha basit bir
+          haliydi. Aynı zamanda, oyunların özel sunucularını açmayı öğrenmeye başlamıştım
+          ve Filezilla Yardımıyla Gladiatus Gibi oyunlarda kendi özel sunucularımı
+          açmıştım. Sanal ortam dışında lisede de kendi düzenimi ve arkadaş ortamı
+          oluşturmaya başlamıştım, çok sevdiğim ve beni çok seven dört yakın arkadaşım
+          vardı, ilk defa beni kabullenen ve ait olduğum bir yer varmış gibi
+          hissediyordum. Bu yüzden arkadaşlarıma çok değer veriyordum, ailem gibi
+          olmuşlardı benim için. Onlarla beraber vakit geçirmeyi, gezmeyi ve farklı
+          aktiviteler yapmayı çok seviyordum. </p>
+          <h1 id="arkadas">Arkadaş Faktörü</h1>
+          <p id="p6">Bir gün arkadaşlarımdan birisi, durumumla ilgili aşağılayıcı bir sözcük
+          kullanması beni çok kırmıştı. Bu durum, kendimi toplumdan soyutlamama ve yıl
+          içinde on kilo vermeme kadar neden olmuştu. Sürekli müzik dinlemeye başlamıştım
+          çünkü şarkılar direkt olarak duygularıma işliyor gibiydi ve sadece şarkılar bana
+          yardımcı oluyor gibi hissediyordum. </p>
+          <h1 id="hayır">Her Şerde Bir Hayır Vardır Derler… </h1>
+          <p id="p7">On birinci sınıfa kadar yaşadıklarımın etkisiyle, içimde bir kitap yazma isteği
+          oluşmuştu. Kendi hayatımı ve benim gibi insanların iç dünyalarını ele alarak bir
+          farkındalık aracı olsun istedim. İnsanların bu durumda ki bir insanın iç
+          dünyasını görmesini istiyordum. Günlük hayatta hiç zorluğu düşünülmeyen birçok
+          eylemin zorlaşması, toplumun ‘Farklı’ insanları yargılayışı gibi konuları ele
+          almak istiyordum. Geçmiş yılda arkadaşımla aramın bozulması üzerine mutlu olmak
+          için de, üzülmek için de insanlara muhtaç olduğumuzu düşünüyordum. Bu
+          düşüncelerimin üzerine, kitabımın giriş cümlesini: ‘Hayatta Her Zaman Insanlara
+          Muhtacızdır Önemli Olan Bunu Onların Bilmesidir’ şeklinde yazmaya karar verdim.
+          Kitap yazmak, benim için bir terapi olmaya başlamıştı. Sadece içimi açmakla
+          kalmayıp aynı zamanda da bütün dünyayla paylaşabileceğim ve bütün dünyaya
+          kendimi açabileceğim bir yol olarak görüyordum. İnsanlara hitap etmeyi her zaman
+          çok sevmişimdir. Kitlelere, kendimden ve hayatımdan bahsetmek beni her zaman
+          rahatlatmıştır. Kitaplar her zaman çok daha büyük kitlelere ulaşabileceğim bir
+          yoldu benim için. Bu dönemde kendimi, insan psikolojisi üzerine daha fazla
+          öğrenmek isterken buldum. Bunun üzerine, kendimi geliştirmek için insan
+          psikolojisi üzerine kitaplar okumaya başladım. Özellikle varoluşçu psikoterapist
+          düşünür Irving D. Yalom’un kitapları beni çok etkilemişti. Bu konuda kendimi
+          geliştirdikçe ve yeni şeyler öğrendikçe, bu konuyla ilgili bir kariyer
+          istediğimi fark ettim. ve psikoloji okumayı düşünmeye başlamıştım; ancak
+          sonradan vazgeçtim. Son sınıfta, insanlarda bilinç oluşturabilmek adına ‘4
+          Aralık Dünya Engelliler’ Günü hakkında bilgilendirici bir konferans vermek
+          istedim ve bu konu hakkında okul müdürümle konuştum. Güzel bir konuşma
+          yapabilmek adına, Feza Nur Özel Eğitim müdürü ve fizyoterapistleri ile
+          röportajlar yapmıştım. Bu röportajlar sırasında, insanlar ile konuşmayı ne kadar
+          çok sevdiğimi daha iyi bir şekilde fark ettim ve günün sonunda toplamda sekiz
+          sınıfa konferans verdim. </p>
+      </div>
+      <div class="about-content-sec-two" style="padding-top: 30px; padding-bottom: 30px; padding-left: 30px; padding-right: 30px;">
+        <section class="timeline">
+          <div class="timeline-side">
+            <div id="edu" class="timeline-title">Egitim</div>
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fas fa-school"></i>
+              </div>
+              <div class="timeline-content">
+                <h3 id="school">İlkokul & Ortaokul</h3>
+                <div class="timeline-date">
+                  <i class="far fa-calendar-alt"></i> Sept 2006 - Jun 2014
+                </div>
+                <p>Setbasşı İlk ve Ortaöğretim Okulu</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fas fa-school"></i>
+              </div>
+              <div class="timeline-content">
+                <h3 id="schooll">Lise</h3>
+                <div class="timeline-date">
+                  <i class="far fa-calendar-alt"></i>  Sept 2014 - Jun 2018
+                </div>
+                <p>Yıldırım Beyazıt Anadolu Lisesi</p>
+              </div>
+            </div>
+            <!-- <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fas fa-school"></i>
+              </div>
+              <div class="timeline-content">
+                <h3>Üniversite</h3>
+                <p>Uludağ Üniversitesi Büro Yönetimi ve Yönetici Asistanlığı (Tahmini Bitiş 2024)</p>
+              </div>
+            </div> -->
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fas fa-school"></i>
+              </div>
+              <div class="timeline-content">
+                <h3 id="universty">Üniversite</h3>
+                <div class="timeline-date">
+                  <i class="far fa-calendar-alt"></i> Sept 2019 - Jun 2021
+                </div>
+                <p>Eskişehir Anadolu Üniversitesi Web Tasarım Kodlama</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-side">
+            <div id="carreer" class="timeline-title">Kariyer</div>
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <div class="timeline-content">
+                <h3>Avane Cloud Kitchens</h3>
+                <div class="timeline-date">
+                  <i class="far fa-calendar-alt"></i> Jun 2022 - Still Ongoing
+                </div>
+                <p>Web Tasarım ve Kodlama</p>
+              </div>
+            </div>
+            <!-- <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <div class="timeline-content">
+                <h3>Second Job</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim, quam a luctus efficitur, libero est vehicula urna, non pretium nunc nisi in urna. Maecenas euismod quis urna et dictum.</p>
+              </div>
+            </div> -->
+          </div>
+        </section>
+      </div>
+      <div class="about-content-sec-three" style="padding-top: 30px; padding-bottom: 30px; padding-left: 30px; padding-right: 30px;">
+           <div id=Iframe-Master-CC-and-Rs class="set-margin set-padding set-border set-box-shadow center-block-horiz">
+                <div class="responsive-wrapper responsive-wrapper-wxh-572x612"
+                    style=-webkit-overflow-scrolling:touch;overflow:auto> <iframe
+                        src="./assets/pdf/Kitap.pdf#toolbar=0">
+                        <p style=font-size:110%><em><strong>ERROR: </strong> An &#105;frame should be displayed here but
+                                your browser version does not support &#105;frames. </em>Please update your browser to
+                            its most recent version and try again.</p>
+                    </iframe> </div>
+            </div>
+
+      </div>
+      <div class="about-content-sec-four" style="padding-top: 30px; padding-bottom: 30px; padding-left: 30px; padding-right: 30px; height: 600px; opacity: 0;">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque possimus quisquam non! Molestiae sequi ipsam totam consequuntur nostrum laudantium, at nobis tempore, cumque numquam quaerat, suscipit exercitationem dolorem consectetur. Nisi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil praesentium, veritatis, facere qui, in itaque atque iure debitis impedit omnis doloribus dicta voluptates blanditiis aliquam natus ab delectus? Earum, qui!Lorem lorem3x3
+
+        </p>
+
+      </div>
+    
+      
+
+  </div> 
+  <div id="works-content" class="works-content contentboxes">
+    <img onclick="closeworks()" class="close" src="./assets/img/close.webp" alt="closebutton">
+    <div class="works-content-sec">
+      <div class="works-container">
+        <img class="web1" src="./assets/img/web1.webp" alt="Works-One">
+        <div class="overlay">
+          <h2 id="ph1">Modern Sade Kişisel Website</h2>
+          <a href="#" style="text-decoration: none;"><div class="works-text">İncelemek İçin Tıklayın</div> </a>
+        </div>
+      </div>
+      <div class="works-container">
+        <img class="web1" src="./assets/img/web2.webp" alt="Works-One">
+        <div class="overlay">
+          <h2 id="ph2">Klasik Modern Kişisel Website</h2>
+          <a href="#" style="text-decoration: none;"><div class="works-text">İncelemek İçin Tıklayın</div> </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contact-content" class="contact-content contentboxes">
+    <img onclick="closecontact()" class="close" src="./assets/img/close.webp" alt="closebutton">
+    <img class="cardimg-sec" src="./assets/img/kaya.webp" alt="Ömer Kaya Ekici">
+    <div class="contact-content-sec">
+      <h2 style="text-align: center; padding-top: 60px;">Bana Selam Ver 👋</h2>
+      <form style="padding-top: 125px; padding-bottom: 15px; padding-left: 25%; padding-right: 25%;" id="contact" action="" method="GET">
+        <fieldset>
+          <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your Email Address" type="email" tabindex="2" required>
+        </fieldset>
+          <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+
+</div> 
+</body>
+
+<script>
+ 
+  function givebggold () {
+    var r = document.querySelector(':root');
+   
+   r.style.setProperty('--currentgradiant', 'var(--gradiantgold)');
+
+  }
+  function givebgpurple () {
+    var r = document.querySelector(':root');
+   
+   r.style.setProperty('--currentgradiant', 'var(--gradiantpurple)');
+
+  }
+  function givebggreen () {
+    var r = document.querySelector(':root');
+   
+   r.style.setProperty('--currentgradiant', 'var(--gradiantgreen)');
+
+  }
+  var checkpurple = false;
+  var checklangEN = false;
+  var checkgold = true;
+  checkgreen = false;
+  function langTR(){
+    const paragraph = document.getElementById('littlep');
+    const hproje = document.getElementById('proje');
+    const hiletisim = document.getElementById('iletisim');
+    const hdil = document.getElementById('dil');
+    const harkaplan = document.getElementById('arkaplan');
+    const habout = document.getElementById('cardabout');
+    const hworks = document.getElementById('cardworks');
+    const hcardd = document.getElementById('cardd');
+    const hbgcard = document.getElementById('bg-card');
+    const hedu = document.getElementById('edu');
+    const hschool = document.getElementById('school');
+    const huniversty = document.getElementById('universty');
+    const hschooll = document.getElementById('schooll');
+    const hcareer = document.getElementById('carreer');
+    const hcontact = document.getElementById('cardcontact');
+    const hsettings = document.getElementById('settings');
+    const divs = document.getElementsByClassName('works-text')
+    const hdogum = document.getElementById('dogum');
+    const hegitim = document.getElementById('egitim');
+    const hdışlanma = document.getElementById('dışlanma');
+    const hmerak = document.getElementById('merak');
+    const hazim = document.getElementById('azim');
+    const harkadas = document.getElementById('arkadas');
+    const hhayır = document.getElementById('hayır');
+    const hp1 = document.getElementById('p1');
+    const hp2 = document.getElementById('p2');
+    const hp3 = document.getElementById('p3');
+    const hp4 = document.getElementById('p4');
+    const hp5 = document.getElementById('p5');
+    const hp6 = document.getElementById('p6');
+    const hp7 = document.getElementById('p7');
+    const hph1 = document.getElementById('ph1');
+    const hph2 = document.getElementById('ph2');
+    checklangEN = false;
+
+
+/*  İf */
+if(checklangEN == true) {
+         habout.style.backgroundImage = 'url(./assets/img/gold/about.webp)';
+hworks.style.backgroundImage = 'url(./assets/img/gold/projects.webp)';
+ hcontact.style.backgroundImage = 'url(./assets/img/gold/contact.webp)';
+ hsettings.style.backgroundImage = 'url(./assets/img/gold/settings.webp)';
+
+    if(checkgreen == true) {
+    if(checklangEN == true) {
+      habout.style.backgroundImage = 'url(./assets/img/green/about-green.webp)';
+    hworks.style.backgroundImage = 'url(./assets/img/green/projects-green.webp)';
+    hcontact.style.backgroundImage = 'url(./assets/img/green/contact-green.webp)';
+    hsettings.style.backgroundImage = 'url(./assets/img/green/settings-green.webp)';
+    }
+    else if (checklangEN == false) {
+      habout.style.backgroundImage = 'url(./assets/img/green/Hakkımda-green.webp)';
+    hworks.style.backgroundImage = 'url(./assets/img/green/Projelerim-green.webp)';
+    hcontact.style.backgroundImage = 'url(./assets/img/green/İletisim-green.webp)';
+    hsettings.style.backgroundImage = 'url(./assets/img/green/settings-green.webp)';
+    }
+    }
+    else if (checkgreen == false) {
+      if(checkpurple == true) {
+      if(checklangEN == true) {
+        habout.style.backgroundImage = 'url(./assets/img/purple/about-purple.webp)';
+      hworks.style.backgroundImage = 'url(./assets/img/purple/projects-purple.webp)';
+      hcontact.style.backgroundImage = 'url(./assets/img/purple/contact-purple.webp)';
+      hsettings.style.backgroundImage = 'url(./assets/img/purple/settings-purple.webp)';
+      }
+      else if (checklangEN == false) {
+        habout.style.backgroundImage = 'url(./assets/img/purple/Hakkımda-purple.webp)';
+      hworks.style.backgroundImage = 'url(./assets/img/purple/Projelerim-purple.webp)';
+      hcontact.style.backgroundImage = 'url(./assets/img/purple/İletisim-purple.webp)';
+      hsettings.style.backgroundImage = 'url(./assets/img/purple/settings-purple.webp)';
+      }
+      }
+      else if (checkpurple == false) {
+        habout.style.backgroundImage = 'url(./assets/img/gold/about.webp)';
+  hworks.style.backgroundImage = 'url(./assets/img/gold/projects.webp)';
+   hcontact.style.backgroundImage = 'url(./assets/img/gold/contact.webp)';
+   hsettings.style.backgroundImage = 'url(./assets/img/gold/settings.webp)';
+      }
+    }
+  }
+  else if (checklangEN == false) {
+habout.style.backgroundImage = 'url(./assets/img/gold/Hakkımda.webp)';
+hworks.style.backgroundImage = 'url(./assets/img/gold/Projelerim.webp)';
+ hcontact.style.backgroundImage = 'url(./assets/img/gold/İletisim.webp)';
+ hsettings.style.backgroundImage = 'url(./assets/img/gold/settings.webp)';
+ if(checkgreen == true) {
+  habout.style.backgroundImage = 'url(./assets/img/green/Hakkımda-green.webp)';
+    hworks.style.backgroundImage = 'url(./assets/img/green/Projelerim-green.webp)';
+    hcontact.style.backgroundImage = 'url(./assets/img/green/İletisim-green.webp)';
+    hsettings.style.backgroundImage = 'url(./assets/img/green/settings-green.webp)';
+ }
+ if(checkpurple == true) {
+  habout.style.backgroundImage = 'url(./assets/img/purple/Hakkımda-purple.webp)';
+      hworks.style.backgroundImage = 'url(./assets/img/purple/Projelerim-purple.webp)';
+      hcontact.style.backgroundImage = 'url(./assets/img/purple/İletisim-purple.webp)';
+      hsettings.style.backgroundImage = 'url(./assets/img/purple/settings-purple.webp)';
+ }
+  }
+/*  İf */
+/*  İf */
+  paragraph.innerHTML = '9 Ocak 1999 Tarihinde Bursa’nın Osmangazi Ilçesinde Zübeyde Hanım Doğum Evinde Cerebral Palsy Tanısıyla Dünyaya Geldim... <br> Eğitim hayatım boyunca tedavilerim amacıyla Ankara Hacettepe Üniversitesinde birçok ameliyat geçirdim. İlkokul dönemi sadece yoğun ameliyatlarla değil aynı zamanda insanların tavırları yüzünden de oldukça zorlu geçen bir dönemdi. Öyle düşünüyorum ki insan doğası gereği, bilmediği ve anlayamadığı şeylerden çekinir ve garipserler. Bu durumun insan ilişkileri üzerindeki etkisi ise; toplumda ‘farklı olanı veya farklılıkları’ dışlamaya dönüyor kanımca.';
+  hproje.innerHTML = 'Projelerim';
+  hiletisim.innerHTML = 'İletişim';
+  hdil.innerHTML = 'Dil';
+  hcardd.innerHTML = 'Kart Tasarımı';
+  harkaplan.innerHTML = 'Arka Plan';
+  hph1.innerHTML = 'Modern Sade Kişisel Website';
+  hedu.innerHTML = 'Egitim';
+  hcareer.innerHTML = 'Kariyer';
+  hph2.innerHTML = 'Klasik Modern Kişisel Website';
+  hbgcard.innerHTML = 'Kart Arka Planı';
+  hschool.innerHTML = 'İlkokul & Ortaokul'
+  hschooll.innerHTML = 'Lise'
+  huniversty.innerHTML = 'Üniversite'
+  // habout.style.backgroundImage = 'url(./assets/img/Hakkımda.webp)';
+  // hworks.style.backgroundImage = 'url(./assets/img/Projelerim.webp)';
+  // hcontact.style.backgroundImage = 'url(./assets/img/İletisim.webp)';
+  hdogum.innerHTML = 'Doğum ve Doğumla Gelen Sürpriz';
+  hp1.innerHTML = '9 Ocak 1999 tarihinde Bursa’nın Osmangazi ilçesinde Zübeyde Hanım Doğumevi’nde Cerebral Palsy tanısıyla dünyaya geldim. Cerebral Palsy’nin birçok sonucundan bendeki etkisi sağ tarafımı felçli bırakmasıydı. Bu yüzden küçük yaşta kaslarımı gevşetme amacıyla, ilkokul dönemime kadar birçok botoks tedavisi geçirdim. İlköğretimi Setbaşı İlköğretim Okulunda tamamladım.';
+  hegitim.innerHTML = 'Eğitim Sürecim';
+  hp2.innerHTML = 'Bu süreçte tedavilerim amacıyla Ankara Hacettepe Üniversitesinde birçok ameliyat geçirdim. İlkokul dönemi sadece yoğun ameliyatlarla değil aynı zamanda insanların tavırları yüzünden de oldukça zorlu geçen bir dönemdi. Öyle düşünüyorum ki insan doğası gereği, bilmediği ve anlayamadığı şeylerden çekinir ve garipserler. Bu durumun insan ilişkileri üzerindeki etkisi ise; toplumda ‘farklı olanı veya farklılıkları’ dışlamaya dönüyor kanımca. Bununla birlikte; ilköğretim yıllarında insanların pek empati sahibi olmadığı ve kendi sınırları içerisinde yaşadığı da göz önünde bulundurulunca, herhangi bir engelle sahip insanlarla tanışmış olma olasılığı oldukça düşük oluyor.';
+  hdışlanma.innerHTML = 'Dışlanma ve Toplumun Bir Parçası Olamama Duygusu';
+  hp3.innerHTML = 'Bunların hepsinin toplamında ilköğretim dönemim, bolca dışlanma ve toplumun bir parçası olarak hissedememiş olmamla beraber geçmişti. Kendimi, bütün engelleri kaldırabildiğim sanal ortama vermeye başlamıştım. Okul dışı zamanımı, oyunlar ile geçiriyordum. League of Legends ve Counter Strike Global Offensive gibi online oyunlar oynamakla beraber Command & Conquer Genereals gibi strateji oyunlarını da oynamayı özellikle seviyordum. Bu yüzden bu alanda kendimi geliştirmek istedim.';
+  hmerak.innerHTML = 'Merak Dürtüsü';
+  hp4.innerHTML = 'Kendimi oyun sektöründe geliştirme kararı almanın yanı sıra, web tasarım ve kodlama alanı da ilgimi çeken diğer bir alan olduğu için bu alan hakkında da çalışmalara başlamıştım ve başlangıç olarak ise blog sitesi açmaya karar vermiştim. Lise hayatım, Yıldırım Beyazıt Anadolu Lisesi’nde başlamıştı. Lise yıllarında akıllı tahtamızın sadece usb bellek ile açılması dikkatimi çekmişti ve bu sistemi daha yakından incelemek istedim. Benzer bir sistemi tasarlamak adına, güvenlik sistemlerini araştırmaya başlamıştım. İlk adım olarak; Visual Basic programı ve C# dilini öğrenmeye başladıktan sonra, ben de kendi programlarımı yapmaya başlamıştım. Yabancı kaynaklardan yararlanarak, kendi çalışmalarımda kullanıyordum.';
+  hazim.innerHTML = 'Azim ve Tekrar Başarı';
+  hp5.innerHTML = 'En sonunda benzer bir program yapmayı başarmıştım; lakin çok daha basit bir haliydi. Aynı zamanda, oyunların özel sunucularını açmayı öğrenmeye başlamıştım ve Filezilla Yardımıyla Gladiatus Gibi oyunlarda kendi özel sunucularımı açmıştım. Sanal ortam dışında lisede de kendi düzenimi ve arkadaş ortamı oluşturmaya başlamıştım, çok sevdiğim ve beni çok seven dört yakın arkadaşım vardı, ilk defa beni kabullenen ve ait olduğum bir yer varmış gibi hissediyordum. Bu yüzden arkadaşlarıma çok değer veriyordum, ailem gibi olmuşlardı benim için. Onlarla beraber vakit geçirmeyi, gezmeyi ve farklı aktiviteler yapmayı çok seviyordum.';
+  harkadas.innerHTML = 'Arkadaş Faktörü';
+  hp6.innerHTML = 'Bir gün arkadaşlarımdan birisi, durumumla ilgili aşağılayıcı bir sözcük kullanması beni çok kırmıştı. Bu durum, kendimi toplumdan soyutlamama ve yıl içinde on kilo vermeme kadar neden olmuştu. Sürekli müzik dinlemeye başlamıştım çünkü şarkılar direkt olarak duygularıma işliyor gibiydi ve sadece şarkılar bana yardımcı oluyor gibi hissediyordum.';
+  hhayır.innerHTML = 'Her Şerde Bir Hayır Vardır Derler…';
+  hp7.innerHTML = 'On birinci sınıfa kadar yaşadıklarımın etkisiyle, içimde bir kitap yazma isteği oluşmuştu. Kendi hayatımı ve benim gibi insanların iç dünyalarını ele alarak bir farkındalık aracı olsun istedim. İnsanların bu durumda ki bir insanın iç dünyasını görmesini istiyordum. Günlük hayatta hiç zorluğu düşünülmeyen birçok eylemin zorlaşması, toplumun ‘Farklı’ insanları yargılayışı gibi konuları ele almak istiyordum. Geçmiş yılda arkadaşımla aramın bozulması üzerine mutlu olmak için de, üzülmek için de insanlara muhtaç olduğumuzu düşünüyordum. Bu düşüncelerimin üzerine, kitabımın giriş cümlesini: ‘Hayatta Her Zaman Insanlara Muhtacızdır Önemli Olan Bunu Onların Bilmesidir’ şeklinde yazmaya karar verdim. Kitap yazmak, benim için bir terapi olmaya başlamıştı. Sadece içimi açmakla kalmayıp aynı zamanda da bütün dünyayla paylaşabileceğim ve bütün dünyaya kendimi açabileceğim bir yol olarak görüyordum. İnsanlara hitap etmeyi her zaman çok sevmişimdir. Kitlelere, kendimden ve hayatımdan bahsetmek beni her zaman rahatlatmıştır. Kitaplar her zaman çok daha büyük kitlelere ulaşabileceğim bir yoldu benim için. Bu dönemde kendimi, insan psikolojisi üzerine daha fazla öğrenmek isterken buldum. Bunun üzerine, kendimi geliştirmek için insan psikolojisi üzerine kitaplar okumaya başladım. Özellikle varoluşçu psikoterapist düşünür Irving D. Yalom’un kitapları beni çok etkilemişti. Bu konuda kendimi geliştirdikçe ve yeni şeyler öğrendikçe, bu konuyla ilgili bir kariyer istediğimi fark ettim. ve psikoloji okumayı düşünmeye başlamıştım; ancak sonradan vazgeçtim. Son sınıfta, insanlarda bilinç oluşturabilmek adına ‘4 Aralık Dünya Engelliler’ Günü hakkında bilgilendirici bir konferans vermek istedim ve bu konu hakkında okul müdürümle konuştum. Güzel bir konuşma yapabilmek adına, Feza Nur Özel Eğitim müdürü ve fizyoterapistleri ile röportajlar yapmıştım. Bu röportajlar sırasında, insanlar ile konuşmayı ne kadar çok sevdiğimi daha iyi bir şekilde fark ettim ve günün sonunda toplamda sekiz sınıfa konferans verdim.';
+  for (const div of divs) {
+    div.innerHTML = 'İncelemek İçin Tıklayın';
+ 
+}
+  }
+  
+  function langEN(){
+    const paragraph = document.getElementById('littlep');
+    const hproje = document.getElementById('proje');
+    const hiletisim = document.getElementById('iletisim');
+    const hdil = document.getElementById('dil');
+    const hcardd = document.getElementById('cardd');
+    const hbgcard = document.getElementById('bg-card');
+    const hedu = document.getElementById('edu');
+    const hcareer = document.getElementById('carreer');
+    const harkaplan = document.getElementById('arkaplan');
+    const habout = document.getElementById('cardabout');
+    const hworks = document.getElementById('cardworks');
+    const hcontact = document.getElementById('cardcontact');
+    const hschool = document.getElementById('school');
+    const huniversty = document.getElementById('universty');
+    const hschooll = document.getElementById('schooll');
+    const hsettings = document.getElementById('settings');
+    const divs = document.getElementsByClassName('works-text')
+    const hdogum = document.getElementById('dogum');
+    const hegitim = document.getElementById('egitim');
+    const hdışlanma = document.getElementById('dışlanma');
+    const hmerak = document.getElementById('merak');
+    const hazim = document.getElementById('azim');
+    const harkadas = document.getElementById('arkadas');
+    const hhayır = document.getElementById('hayır');
+    const hp1 = document.getElementById('p1');
+    const hp2 = document.getElementById('p2');
+    const hp3 = document.getElementById('p3');
+    const hp4 = document.getElementById('p4');
+    const hp5 = document.getElementById('p5');
+    const hp6 = document.getElementById('p6');
+    const hp7 = document.getElementById('p7');
+    const hph1 = document.getElementById('ph1');
+    const hph2 = document.getElementById('ph2');
+    checklangEN = true;
+ 
+    if(checklangEN == true) {
+           habout.style.backgroundImage = 'url(./assets/img/gold/about.webp)';
+  hworks.style.backgroundImage = 'url(./assets/img/gold/projects.webp)';
+   hcontact.style.backgroundImage = 'url(./assets/img/gold/contact.webp)';
+   hsettings.style.backgroundImage = 'url(./assets/img/gold/settings.webp)';
+ 
+      if(checkpurple == true) {
+      if(checklangEN == true) {
+        habout.style.backgroundImage = 'url(./assets/img/purple/about-purple.webp)';
+      hworks.style.backgroundImage = 'url(./assets/img/purple/projects-purple.webp)';
+      hcontact.style.backgroundImage = 'url(./assets/img/purple/contact-purple.webp)';
+      hsettings.style.backgroundImage = 'url(./assets/img/purple/settings-purple.webp)';
+      }
+      else if (checklangEN == false) {
+        habout.style.backgroundImage = 'url(./assets/img/purple/Hakkımda-purple.webp)';
+      hworks.style.backgroundImage = 'url(./assets/img/purple/Projelerim-purple.webp)';
+      hcontact.style.backgroundImage = 'url(./assets/img/purple/İletisim-purple.webp)';
+      hsettings.style.backgroundImage = 'url(./assets/img/purple/settings-purple.webp)';
+      }
+      }
+     else if (checkgreen == true) {
+      if(checklangEN == true) {
+        habout.style.backgroundImage = 'url(./assets/img/green/about-green.webp)';
+      hworks.style.backgroundImage = 'url(./assets/img/green/projects-green.webp)';
+      hcontact.style.backgroundImage = 'url(./assets/img/green/contact-green.webp)';
+      hsettings.style.backgroundImage = 'url(./assets/img/green/settings-green.webp)';
+      }
+      else if(checklangEN == false) {
+        habout.style.backgroundImage = 'url(./assets/img/green/Hakkımda-green.webp)';
+    hworks.style.backgroundImage = 'url(./assets/img/green/Projelerim-green.webp)';
+    hcontact.style.backgroundImage = 'url(./assets/img/green/İletisim-green.webp)';
+    hsettings.style.backgroundImage = 'url(./assets/img/green/settings-green.webp)';
+      }
+       
+     }
+    }
+    else if (checklangEN == false) {
+  habout.style.backgroundImage = 'url(./assets/img/gold/Hakkımda.webp)';
+  hworks.style.backgroundImage = 'url(./assets/img/gold/Projelerim.webp)';
+   hcontact.style.backgroundImage = 'url(./assets/img/gold/İletisim.webp)';
+   hsettings.style.backgroundImage = 'url(./assets/img/gold/settings.webp)';
+   if(checkpurple == true) {
+    habout.style.backgroundImage = 'url(./assets/img/purple/Hakkımda-purple.webp)';
+      hworks.style.backgroundImage = 'url(./assets/img/purple/Projelerim-purple.webp)';
+      hcontact.style.backgroundImage = 'url(./assets/img/purple/İletisim-purple.webp)';
+      hsettings.style.backgroundImage = 'url(./assets/img/purple/settings-purple.webp)';
+   }
+    }
+/*  İf */
+  paragraph.innerHTML = 'I was born with the diagnosis of Cerebral Palsy in Zübeyde Hanım Maternity Home in Osmangazi District of Bursa on January 9, 1999... <br> During my education life, I had many surgeries at Ankara Hacettepe University for my treatment. The primary school period was a very difficult period not only because of the intensive surgeries but also because of the attitudes of the people. I think that by human nature, they shy away from things they do not know and cannot understand, and they are strange. The effect of this situation on human relations is; In my opinion, it turns to excluding the different or differences in society.';
+  hproje.innerHTML = 'My Projects';
+  hiletisim.innerHTML = 'Contact Me';
+  hdil.innerHTML = 'Language';
+  hcardd.innerHTML = 'Card Design';
+  harkaplan.innerHTML = 'Background';
+  hbgcard.innerHTML = 'Card Background Color';
+  hedu.innerHTML = 'EDUCATION';
+  hcareer.innerHTML = 'Career';
+  hschool.innerHTML = 'Primary & Secondary School'
+  hschooll.innerHTML = 'High School'
+  huniversty.innerHTML = 'Universty'
+  hph1.innerHTML = 'Modern Basic Personal Website';
+  hph2.innerHTML = 'Classic Modern Personal Website';
+  // habout.style.backgroundImage = 'url(./assets/img/about.webp)';
+  // hworks.style.backgroundImage = 'url(./assets/img/projects.webp)';
+  // hcontact.style.backgroundImage = 'url(./assets/img/contact.webp)';
+  hdogum.innerHTML = 'Surprise at Birth';
+  hp1.innerHTML = 'I was born with the diagnosis of Cerebral Palsy on January 9, 1999 in the Zübeyde Hanım Maternity Home in the Osmangazi district of Bursa. The effect of Cerebral Palsy on me was that it left my right side paralyzed. Thats why I had many botox treatments until my primary school period in order to relax my muscles at a young age. I completed my primary education at Setbaşı Primary School.';
+  hegitim.innerHTML = 'My Education Process';
+  hp2.innerHTML = 'In this process, I had many surgeries at Ankara Hacettepe University for my treatments. The primary school period was a very difficult period not only because of intensive surgeries, but also because of peoples attitudes. I think that people, by nature, shy away from things they do not know and cannot understand, and they are strange. The effect of this situation on human relations is; In my opinion, it turns to excluding the different or differences in society. With this; Considering that people do not have much empathy and live within their own boundaries during primary school years, the probability of meeting people with any disability is very low.';
+  hdışlanma.innerHTML = 'Feeling of Exclusion and Not Being a Part of Society';
+  hp3.innerHTML = 'All in all, my primary school period was filled with a lot of exclusion and not being able to feel part of society. I started to give myself to the virtual environment where I can remove all obstacles. Outside of school, I spent my time playing games. Besides playing online games such as League of Legends and Counter Strike Global Offensive, I also particularly liked playing strategy games such as Command & Conquer Genereals. Thats why I wanted to improve myself in this field.';
+  hmerak.innerHTML = 'The urge to wonder';
+  hp4.innerHTML = 'In addition to making the decision to develop myself in the game industry, web design and coding is another field that interests me, so I started working on this field and decided to open a blog site as a start. My high school life started at Yıldırım Beyazıt Anatolian High School. During my high school years, my attention was drawn to the fact that our smart board was only powered by a USB memory stick, and I wanted to examine this system more closely. I started researching security systems to design a similar system. As the first step; After I started learning Visual Basic program and C# language, I started to make my own programs. I was using foreign sources in my own work.';
+  hazim.innerHTML = 'Perseverance and Repeat Success';
+  hp5.innerHTML = 'I finally managed to make a similar program; but it was much simpler. At the same time I was starting to learn how to open private servers of games and with the help of Filezilla I opened my own private servers in games like Gladiatus. Apart from the virtual environment, I started to create my own order and friend environment in high school, I had four close friends who I loved and loved me very much. For the first time, I felt like there was a place where I belonged and accepted me. Thats why I valued my friends so much, they were like family to me. I loved spending time with them, traveling and doing different activities.';
+  harkadas.innerHTML = 'The Effect of Friend Factor on Our Psychology';
+  hp6.innerHTML = 'One day, a friend of mine used a derogatory word about my situation, and I was very offended. This situation caused me to isolate myself from society and to lose ten kilos within the year. I started listening to music all the time because the songs seemed to directly touch my emotions and I felt like only the songs were helping me.';
+  hhayır.innerHTML = 'They say that there is a good in every evil...';
+  hp7.innerHTML = 'Under the influence of my experiences until the eleventh grade, I had the desire to write a book. I wanted it to be a tool of awareness by taking into my own life and the inner worlds of people like me. I wanted people to see the inner world of a person in this situation. I wanted to address issues such as the difficulty of many actions that are not considered difficult in daily life, and the way society judges different people. When my relationship with my friend deteriorated in the past year, I thought that we needed people to be happy and to be sad. On top of these thoughts, I decided to write the opening sentence of my book: We Always Need People in Life, The Important thing is for Them to Know It. Writing books was becoming a therapy for me. I saw it as a way for me to not only open up, but also to share with the whole world and open myself up to the whole world. I have always loved addressing people. I have always been relieved to tell the masses about myself and my life. Books have always been a way for me to reach a much larger audience. During this period, I found myself wanting to learn more about human psychology. So I started reading books on human psychology to improve myself. I was particularly impressed by the books of the existentialist psychotherapist thinker Irving D. Yalom. As I improved and learned new things about it, I realized that I wanted a career in this subject. And I was starting to think about studying psychology; but then I gave up. In the last year, I wanted to give an informative conference about 4 December World Day of Persons with Disabilities  in order to raise awareness in people and I talked to my school principal about this issue. In order to make a good speech, I interviewed Feza Nur Special Education director and physiotherapists. During these interviews, I realized better how much I love talking to people, and at the end of the day I lectured a total of eight classes.';
+  for (const div of divs) {
+    div.innerHTML = 'Click to review';
+ 
+}
+ 
+  }
+  function givepurple () {
+    checkpurple = true; /* b */
+    checkgold = false;
+    checkgreen = false;
+    const harkaplan = document.getElementById('arkaplan');
+    const habout = document.getElementById('cardabout');
+    const hworks = document.getElementById('cardworks');
+    const hcontact = document.getElementById('cardcontact');
+    const hsettings = document.getElementById('settings');
+    const elements = document.getElementsByClassName('card-side');
+    for (const element of elements) {
+  element.style.borderColor = "#f442ff";
+}
+    if(checklangEN == true) {
+           habout.style.backgroundImage = 'url(./assets/img/gold/about.webp)';
+  hworks.style.backgroundImage = 'url(./assets/img/gold/projects.webp)';
+   hcontact.style.backgroundImage = 'url(./assets/img/gold/contact.webp)';
+   hsettings.style.backgroundImage = 'url(./assets/img/gold/settings.webp)';
+ 
+      if(checkpurple == true) {
+      if(checklangEN == true) {
+        habout.style.backgroundImage = 'url(./assets/img/purple/about-purple.webp)';
+      hworks.style.backgroundImage = 'url(./assets/img/purple/projects-purple.webp)';
+      hcontact.style.backgroundImage = 'url(./assets/img/purple/contact-purple.webp)';
+      hsettings.style.backgroundImage = 'url(./assets/img/purple/settings-purple.webp)';
+      }
+      else if (checklangEN == false) {
+        habout.style.backgroundImage = 'url(./assets/img/purple/Hakkımda-purple.webp)';
+      hworks.style.backgroundImage = 'url(./assets/img/purple/Projelerim-purple.webp)';
+      hcontact.style.backgroundImage = 'url(./assets/img/purple/İletisim-purple.webp)';
+      hsettings.style.backgroundImage = 'url(./assets/img/purple/settings-purple.webp)';
+      }
+      }
+      else if (checkpurple == false) {
+        habout.style.backgroundImage = 'url(./assets/img/gold/about.webp)';
+  hworks.style.backgroundImage = 'url(./assets/img/gold/projects.webp)';
+   hcontact.style.backgroundImage = 'url(./assets/img/gold/contact.webp)';
+   hsettings.style.backgroundImage = 'url(./assets/img/gold/settings.webp)';
+      }
+    }
+    else if (checklangEN == false) {
+  habout.style.backgroundImage = 'url(./assets/img/gold/Hakkımda.webp)';
+  hworks.style.backgroundImage = 'url(./assets/img/gold/Projelerim.webp)';
+   hcontact.style.backgroundImage = 'url(./assets/img/gold/İletisim.webp)';
+   hsettings.style.backgroundImage = 'url(./assets/img/gold/settings.webp)';
+   if(checkpurple == true) {
+    habout.style.backgroundImage = 'url(./assets/img/purple/Hakkımda-purple.webp)';
+      hworks.style.backgroundImage = 'url(./assets/img/purple/Projelerim-purple.webp)';
+      hcontact.style.backgroundImage = 'url(./assets/img/purple/İletisim-purple.webp)';
+      hsettings.style.backgroundImage = 'url(./assets/img/purple/settings-purple.webp)';
+   }
+    }
+/*  İf */
+  }
+  function givegreen () {
+  checkpurple = false; /* b */
+  checkgold = false;
+  checkgreen = true;
+  const harkaplan = document.getElementById('arkaplan');
+  const habout = document.getElementById('cardabout');
+  const hworks = document.getElementById('cardworks');
+  const hcontact = document.getElementById('cardcontact');
+  const hsettings = document.getElementById('settings');
+  const elements = document.getElementsByClassName('card-side');
+  for (const element of elements) {
+element.style.borderColor = "#39FF14";
+}
+  if(checklangEN == true) {
+         habout.style.backgroundImage = 'url(./assets/img/gold/about.webp)';
+hworks.style.backgroundImage = 'url(./assets/img/gold/projects.webp)';
+ hcontact.style.backgroundImage = 'url(./assets/img/gold/contact.webp)';
+ hsettings.style.backgroundImage = 'url(./assets/img/gold/settings.webp)';
+
+    if(checkgreen == true) {
+    if(checklangEN == true) {
+      habout.style.backgroundImage = 'url(./assets/img/green/about-green.webp)';
+    hworks.style.backgroundImage = 'url(./assets/img/green/projects-green.webp)';
+    hcontact.style.backgroundImage = 'url(./assets/img/green/contact-green.webp)';
+    hsettings.style.backgroundImage = 'url(./assets/img/green/settings-green.webp)';
+    }
+    else if (checklangEN == false) {
+      habout.style.backgroundImage = 'url(./assets/img/green/Hakkımda-green.webp)';
+    hworks.style.backgroundImage = 'url(./assets/img/green/Projelerim-green.webp)';
+    hcontact.style.backgroundImage = 'url(./assets/img/green/İletisim-green.webp)';
+    hsettings.style.backgroundImage = 'url(./assets/img/green/settings-green.webp)';
+    }
+    }
+    else if (checkgreen == false) {
+      habout.style.backgroundImage = 'url(./assets/img/gold/about.webp)';
+hworks.style.backgroundImage = 'url(./assets/img/gold/projects.webp)';
+ hcontact.style.backgroundImage = 'url(./assets/img/gold/contact.webp)';
+ hsettings.style.backgroundImage = 'url(./assets/img/gold/settings.webp)';
+    }
+  }
+  else if (checklangEN == false) {
+habout.style.backgroundImage = 'url(./assets/img/gold/Hakkımda.webp)';
+hworks.style.backgroundImage = 'url(./assets/img/gold/Projelerim.webp)';
+ hcontact.style.backgroundImage = 'url(./assets/img/gold/İletisim.webp)';
+ hsettings.style.backgroundImage = 'url(./assets/img/gold/settings.webp)';
+ if(checkgreen == true) {
+  habout.style.backgroundImage = 'url(./assets/img/green/Hakkımda-green.webp)';
+    hworks.style.backgroundImage = 'url(./assets/img/green/Projelerim-green.webp)';
+    hcontact.style.backgroundImage = 'url(./assets/img/green/İletisim-green.webp)';
+    hsettings.style.backgroundImage = 'url(./assets/img/green/settings-green.webp)';
+ }
+  }
+/*  İf */
+}
+  function givegold () {
+    checkpurple = false; /* b */
+    checkgold = true;
+    checkgreen = false;
+    const harkaplan = document.getElementById('arkaplan');
+    const habout = document.getElementById('cardabout');
+    const hworks = document.getElementById('cardworks');
+    const hcontact = document.getElementById('cardcontact');
+    const hsettings = document.getElementById('settings');
+    const elements = document.getElementsByClassName('card-side');
+    for (const element of elements) {
+  element.style.borderColor = "gold";
+}
+    if(checklangEN == true) {
+           habout.style.backgroundImage = 'url(./assets/img/gold/about.webp)';
+  hworks.style.backgroundImage = 'url(./assets/img/gold/projects.webp)';
+   hcontact.style.backgroundImage = 'url(./assets/img/gold/contact.webp)';
+   hsettings.style.backgroundImage = 'url(./assets/img/gold/settings.webp)';
+ 
+      if(checkpurple == true) {
+      if(checklangEN == true) {
+        habout.style.backgroundImage = 'url(./assets/img/purple/about-purple.webp)';
+      hworks.style.backgroundImage = 'url(./assets/img/purple/projects-purple.webp)';
+      hcontact.style.backgroundImage = 'url(./assets/img/purple/contact-purple.webp)';
+      hsettings.style.backgroundImage = 'url(./assets/img/purple/settings-purple.webp)';
+      }
+      else if (checklangEN == false) {
+        habout.style.backgroundImage = 'url(./assets/img/purple/Hakkımda-purple.webp)';
+      hworks.style.backgroundImage = 'url(./assets/img/purple/Projelerim-purple.webp)';
+      hcontact.style.backgroundImage = 'url(./assets/img/purple/İletisim-purple.webp)';
+      hsettings.style.backgroundImage = 'url(./assets/img/purple/settings-purple.webp)';
+      }
+      }
+      else if (checkpurple == false) {
+        habout.style.backgroundImage = 'url(./assets/img/gold/about.webp)';
+  hworks.style.backgroundImage = 'url(./assets/img/gold/projects.webp)';
+   hcontact.style.backgroundImage = 'url(./assets/img/gold/contact.webp)';
+   hsettings.style.backgroundImage = 'url(./assets/img/gold/settings.webp)';
+      }
+    }
+    else if (checklangEN == false) {
+  habout.style.backgroundImage = 'url(./assets/img/gold/Hakkımda.webp)';
+  hworks.style.backgroundImage = 'url(./assets/img/gold/Projelerim.webp)';
+   hcontact.style.backgroundImage = 'url(./assets/img/gold/İletisim.webp)';
+   hsettings.style.backgroundImage = 'url(./assets/img/gold/settings.webp)';
+   if(checkpurple == true) {
+    habout.style.backgroundImage = 'url(./assets/img/purple/Hakkımda-purple.webp)';
+      hworks.style.backgroundImage = 'url(./assets/img/purple/Projelerim-purple.webp)';
+      hcontact.style.backgroundImage = 'url(./assets/img/purple/İletisim-purple.webp)';
+      hsettings.style.backgroundImage = 'url(./assets/img/purple/settings-purple.webp)';
+   }
+    }
+/*  İf */
+  }
+ 
+   function changecolordarkblue() {
+    const harkaplan = document.getElementById('arkaplan');
+    const habout = document.getElementById('cardabout');
+    const hworks = document.getElementById('cardworks');
+    const hcontact = document.getElementById('cardcontact');
+    const hsettings = document.getElementById('settings');
+    var r = document.querySelector(':root');
+   
+           r.style.setProperty('--currentmod', 'var(--darkblue)');
+           
+        }
+
+   function changecolorblack() {
+    const harkaplan = document.getElementById('arkaplan');
+    const habout = document.getElementById('cardabout');
+    const hworks = document.getElementById('cardworks');
+    const hcontact = document.getElementById('cardcontact');
+    const hsettings = document.getElementById('settings');
+    var r = document.querySelector(':root');
+            r.style.setProperty('--currentmod', 'var(--nightmode)');
+
+        }
+        function changecolorlightblue() {
+          const harkaplan = document.getElementById('arkaplan');
+    const habout = document.getElementById('cardabout');
+    const hworks = document.getElementById('cardworks');
+    const hcontact = document.getElementById('cardcontact');
+    const hsettings = document.getElementById('settings');
+    var r = document.querySelector(':root');
+            r.style.setProperty('--currentmod', 'var(--lightdark)');
+            
+        }
+  var aboutcont = document.getElementById("about-content");
+  var contactcont = document.getElementById("contact-content");
+  var workscont = document.getElementById("works-content");
+  var column = document.getElementById("column");
+  function openabout() {
+    aboutcont.style.display='flex';
+    FadeInFunctionForAbout();
+    
+  }
+  function closeabout() {
+    
+    
+    FadeOutFunctionForAbout();
+    
+  }
+  function opencontact() {
+    contactcont.style.display='flex';
+    FadeInFunctionForContact();
+    
+  }
+  function closecontact() {
+    
+    FadeOutFunctionForContact();
+    
+  }
+  function openworks() {
+    workscont.style.display='flex';
+    FadeInFunctionForWorks();
+    
+  }
+  function closeworks() {
+    
+    FadeOutFunctionForWorks();
+    
+  }
+  var myopacity = 0;
+
+function FadeInFunctionForAbout() {
+   if (myopacity<1) {
+    myopacity += .075;
+      column.style.display= 'none';
+     setTimeout(function(){FadeInFunctionForAbout()},100);
+   }
+   document.getElementById('about-content').style.opacity = myopacity;
+}
+
+function FadeOutFunctionForAbout() {
+   if (myopacity>0) {
+    myopacity -= .1;
+      column.style.display= 'block';
+     setTimeout(function(){FadeOutFunctionForAbout()},100);
+     setTimeout(hidden, 1200);
+   }
+   document.getElementById('about-content').style.opacity = myopacity;
+  function hidden() {
+   
+      document.getElementById('about-content').style.display = 'none';
+    }
+    
+  
+}
+function FadeOutFunctionForContact() {
+   if (myopacity>0) {
+    myopacity -= .1;
+      column.style.display= 'block';
+     setTimeout(function(){FadeOutFunctionForContact()},100);
+     setTimeout(hidden, 1200);
+   }
+   document.getElementById('contact-content').style.opacity = myopacity;
+  function hidden() {
+   
+      document.getElementById('contact-content').style.display = 'none';
+    }
+    
+  
+}
+function FadeInFunctionForContact() {
+   if (myopacity<1) {
+    myopacity += .075;
+      column.style.display= 'none';
+     setTimeout(function(){FadeInFunctionForContact()},100);
+   }
+   document.getElementById('contact-content').style.opacity = myopacity;
+} 
+function FadeInFunctionForWorks() {
+   if (myopacity<1) {
+    myopacity += .075;
+      column.style.display= 'none';
+     setTimeout(function(){FadeInFunctionForWorks()},100);
+   }
+   document.getElementById('works-content').style.opacity = myopacity;
+} 
+function FadeOutFunctionForWorks() {
+   if (myopacity>0) {
+    myopacity -= .1;
+      column.style.display= 'block';
+     setTimeout(function(){FadeOutFunctionForWorks()},100);
+     setTimeout(hidden, 1200);
+   }
+   document.getElementById('works-content').style.opacity = myopacity;
+  function hidden() {
+   
+      document.getElementById('works-content').style.display = 'none';
+    }
+    
+  
+}
+</script>
+</html>
