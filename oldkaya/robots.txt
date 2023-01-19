@@ -1,0 +1,5 @@
+User-agent: Googlebot
+Disallow: ./assets/img/music/
+User-agent: Googlebot-Image
+Disallow: ./assets/img/kayagram.png
+Sitemap: http://www.omerkayaekici.com/sitemap.xml

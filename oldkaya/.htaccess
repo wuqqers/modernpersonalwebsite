@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+Redirect Redirect /works/* https://omerkayaekici.com/#portfolio
+RewriteRule ^([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$  detail.php?page=$1&id=$2    [NC,L]
